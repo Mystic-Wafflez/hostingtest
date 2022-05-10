@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="clicker.js" defer="true">
+
+</script>
+<style>
+
+@keyframes movecircle1 {
+	0% {left: 0px; top: 0px;}
+	25% {left: 500px; top: 500px;}
+	50% {left: 1000px; top: 1000px;}
+	75%{left: 1500px; top: 1500px;}
+	100% {left: 0px; top: 0px;} 
+
+}
+@keyframes movecircle2 {
+	0% {top: 0px;}
+	25%{top: 500px; }
+	50%{top: 750px; }
+	75%{top: 1000px; }
+	100% {top: 0px;}
+}
+.animation {
+	animation-name: movecircle1;
+		animation-iteration-count: infinite;
+		position: relative;
+		animation-duration: 7s;
+		animation-timing-function: linear;
+	
+}
+.animation2 {
+	animation-name: movecircle2;
+	animation-iteration-count: infinite;
+	position: relative;
+	animation-duration: 7s;
+	animation-timing-function: linear;
+}
+#circle {
+width: 100px;
+			height: 100px;
+			color: red;
+			background: red;
+			border-radius: 50%;
+			position: relative;
+			background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FH0fT2IjaXJk%2Fmaxresdefault.jpg&f=1&nofb=1");
+			background-size: cover;
+			background-repeat: no-repeat;
+}
+#circlecounter {
+	color: black;
+	position: relative;
+	left: 100%;
+	top: 25%;
+
+}
+#text {
+font-size: 200%;
+font-family: comic sans MS;
+	display: none;
+}
+
+
+</style>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<p id="text"> Congratulations, you've wasted your time.</p> 
+<div id="circle" onclick="shrink()" > <p id="circlecounter"> Circle not clicked. </p>
+</div>
+<p id="secs"> Seconds </p>
+</body>
+</html>
